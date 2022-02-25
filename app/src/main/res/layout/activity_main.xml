@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtHora"
+        android:layout_width="268dp"
+        android:layout_height="74dp"
+        android:width="200dp"
+        android:height="200dp"
+        android:text="Hora"
+        android:textSize="34sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostrarData"
+        app:layout_constraintVertical_bias="0.256"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnMostrarData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="56dp"
+        android:text= "ME aperte"
+        app:layout_constraintBottom_toTopOf="@+id/txtData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="268dp"
+        android:layout_height="74dp"
+        android:width="200dp"
+        android:height="200dp"
+        android:text="data"
+        android:textSize="34sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostrarData"
+        tools:visibility="visible" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textClock"
+        android:layout_weight="0.11"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:format24Hour="hh:mm:ss"
+        android:textLocale="pt-BR"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
